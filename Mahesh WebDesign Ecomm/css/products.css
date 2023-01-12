@@ -1,0 +1,12 @@
+.section{
+    display:flex;
+    float:left;
+    flex-flow: column;
+}
+
+
+
+
+.copy{
+    text-align: center;
+} 

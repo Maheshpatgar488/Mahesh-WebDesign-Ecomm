@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail-contact form</title>
+    <link rel="stylesheet" href="/css/contact.css">
+
+</head>
+
+<body>
+    <h1 style="color:green;text-align:center">Contact Form</h1>
+    
+
+    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120597.58080683915!2d72.70370696249996!3d19.165724700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b645981c6d5f%3A0xf9a4bb7ffe3d8ab7!2sWeb%20Inbox%20%7C%20Website%20Design%20Company%20%7C%20E-Commerce%20Website%20%7C%20Seo%20%7C%20Digital%20Marketing!5e0!3m2!1sen!2sin!4v1673077181076!5m2!1sen!2sin" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div id="form"> 
+        <form  onsubmit="SendEmail();reset();  return false;">
+            Name : <input type="text" name="name" id="name" placeholder="Enter your name"  required><br>
+            Contact : <input type="number" name="contact" id="contact" placeholder="Enter your contact" pattern="[0-9]{10}" maxlength="10" required><br><br>
+            Email : <input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+            Message:
+            <textarea name="msg" id="" cols="30" rows="10" placeholder="Enter the message" required></textarea><br><br>
+            <button type="submit" class="btn" >Send</button><br>
+        </form>
+    </div>
+   
+    
+
+</body>
+
+</html>
